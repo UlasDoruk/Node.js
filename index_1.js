@@ -1,6 +1,6 @@
 //let arguments  = process.argv.slice(1)
 
-let n = 5
+
 
 function area(radius){
     var formulOfArea = Math.PI*(radius**2)

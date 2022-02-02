@@ -32,7 +32,7 @@ const addpost = (addedpost => {
 
     return Promise1
 })
-// try ve catch kullanarak yeni eklemeyi await metoduyla bekleyen ve termianale yazdıran fonksiyon
+// try ve catch kullanarak yeni eklemeyi await metoduyla bekleyen ve terminale yazdıran fonksiyon
 async function last() {
     try {
         await addpost({ post: "Sit" })

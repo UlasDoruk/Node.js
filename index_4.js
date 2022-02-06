@@ -27,7 +27,7 @@ const add = (file, data) => {
     })
 }
 
-const erase = (file) => {
+ const erase = (file) => {
     return new Promise((resolve, reject) => {
         fs.unlink(file, (err) => {
             if (err) console.log(err)
@@ -35,7 +35,7 @@ const erase = (file) => {
         })
     })
 }
-
+ 
 const CRUD = async () => {
     try {
         const file = 'employees.json'

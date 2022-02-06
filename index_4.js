@@ -27,14 +27,14 @@ const add = (file, data) => {
     })
 }
 
-/* const erase = (file) => {
+const erase = (file) => {
     return new Promise((resolve, reject) => {
         fs.unlink(file, (err) => {
             if (err) console.log(err)
             resolve("Dosya silindi")
         })
     })
-} */
+}
 
 const CRUD = async () => {
     try {
@@ -49,8 +49,8 @@ const CRUD = async () => {
         await add(file, data2)
             .then(result => console.log(result))
         console.log(`Eklenen veri : ${data2}`)
-        /* await erase(file)
-            .then(result => console.log(result)) */
+        await erase(file)
+            .then(result => console.log(result))
     }
     catch (err) {
         console.log("Hata:", err)

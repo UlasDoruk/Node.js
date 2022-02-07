@@ -1,4 +1,4 @@
-const express = require('express')
+ const express = require('express')
 const app = express()
 
 app.get('/', (req,res)=> {
@@ -13,10 +13,8 @@ app.get('*', (req, res) => {
     res.status(404).send('Page Can Not Fınd')
 })
 
-
-
 const port = 3000
 
 app.listen(port,()=>{
     console.log("Port : "+ port )
-})
+}) 

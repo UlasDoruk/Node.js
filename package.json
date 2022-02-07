@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/UlasDoruk/Node.js#readme",
   "dependencies": {
-    "express": "^4.17.2",
-    "koa": "^2.13.4"
+    "express": "^4.17.2"
   }
 }

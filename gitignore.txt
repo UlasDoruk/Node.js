@@ -538,6 +538,17 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+node_modules
+package-lock.json
+*.log
+*.gz
+
+# Coveralls
+coverage
+
+# Benchmarking
+benchmarks/graphs
+
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 

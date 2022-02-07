@@ -10,8 +10,10 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html' })
         res.write("<h2>About me!!</h2>")
     }else if(url === "/contact"){
+        // url'nin sayfaya girildiğinde gösterim denemesi (1)
         let url_1 = url
         url_1 =  url_1.split("/")
+        // (2)
         res.writeHead(200, { 'Content-Type': 'text/html' })
         res.write(`<h2>Welcome the ${url_1} page</h2>`)
     }else {
